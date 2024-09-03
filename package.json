@@ -1,0 +1,29 @@
+{
+  "name": "logil",
+  "version": "0.0.2",
+  "files": [
+    "index.js",
+    "README.md",
+    "package.json"
+  ],
+  "keywords": [
+    "logil",
+    "logger",
+    "logging",
+    "logs",
+    "loglevel",
+    "tools",
+    "fast",
+    "colored"
+  ],
+  "main": "index.js",
+  "author": "ahmetcanisik <can.isik.business@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ansi-colors": "^4.1.3",
+    "parcol": "0.0.4"
+  },
+  "peerDependencies": {
+    "parcol": "^0.0.4"
+  }
+}
