@@ -37,7 +37,7 @@ class Logil {
         }
     }
 
-    congigure(options = this.#BASE_CONFIG) {
+    configure(options = this.#BASE_CONFIG) {
         this.#BASE_CONFIG = {
             ...this.#BASE_CONFIG,
             ...options
