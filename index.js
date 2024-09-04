@@ -11,7 +11,7 @@ class Logil {
     }
 
     /**
-     * 0: li
+     * 0: il
      * 1: nice
      * 2: info
      * 3: warn
@@ -45,10 +45,10 @@ class Logil {
     }
 
     /**
-     * @mean default, normal
+     * @mean logil(log.il), default, normal
      * @level 0
      */
-    li(message) {
+    il(message) {
         this.#log(message, 0);
     }
 
@@ -86,5 +86,6 @@ class Logil {
 }
 
 module.exports = {
-    log: new Logil()
+    log: new Logil(),
+    Logil
 };
