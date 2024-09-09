@@ -9,7 +9,8 @@
     "index.js",
     "index.ts",
     "README.md",
-    "package.json"
+    "package.json",
+    "LICENSE"
   ],
   "keywords": [
     "logil",
