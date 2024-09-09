@@ -1,6 +1,6 @@
 {
   "name": "logil",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "scripts": {
     "test": "tsc && node test.js"
@@ -29,6 +29,6 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "parcol": "0.1.2"
+    "parcol": "0.1.3"
   }
 }
