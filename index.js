@@ -2,7 +2,7 @@ import parcol from 'parcol';
 export class Logil {
     #BASE_CONFIG = {
         icon: "▬",
-        prefix: "Logil",
+        prefix: "Logil:",
         level: 0
     };
     #BASE_PREFIX = {
@@ -15,7 +15,7 @@ export class Logil {
         if (options && options.noPrefix) {
             return parcol.pit(message);
         }
-        return parcol.pit(`~${icon_color} ${this.#BASE_CONFIG.icon}~ ~rs,d ${this.#BASE_CONFIG.prefix}: ~ ${message}`);
+        return parcol.pit(`~${icon_color} ${this.#BASE_CONFIG.icon}~ ~rs,d ${this.#BASE_CONFIG.prefix}~ ${message}`);
     }
     /**
      * 0: il
@@ -43,7 +43,24 @@ export class Logil {
                 break;
         }
     }
-    configure(options) {
+    /**
+     *
+     * @param options
+     * @description A method that allows you to change all config options according to your needs.
+     * @example
+     ```
+     import log from 'logil';
+
+     log.configure({
+        icon: "🤺",
+        icon_styles: "d,b",
+        prefix: "astronozorus -> ",
+        prefix_styles: "d",
+        level: 0
+     });
+     ```
+     */
+    configure(options = this.#BASE_CONFIG) {
         this.#BASE_CONFIG = options;
     }
     /**
