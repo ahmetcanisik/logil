@@ -1,31 +1,28 @@
 {
   "name": "logil",
-  "version": "0.0.9",
-  "type": "module",
+  "version": "0.1.0",
+  "description": "Record your log in console.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "try": "npm run build && node ."
+  },
   "files": [
-    "index.js",
-    "index.d.ts",
+    "dist",
+    "LICENSE",
     "README.md",
-    "package.json",
-    "LICENSE"
+    "package.json"
   ],
-  "keywords": [
-    "logil",
-    "logger",
-    "logging",
-    "logs",
-    "loglevel",
-    "tools",
-    "fast",
-    "colored"
-  ],
-  "main": "index.js",
-  "author": "ahmetcanisik <can.isik.business@gmail.com>",
   "license": "MIT",
+  "author": "",
+  "keywords": [
+    "logil"
+  ],
   "devDependencies": {
-    "typescript": "^5.5.4"
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3"
   },
   "dependencies": {
-    "parcol": "0.1.5"
+    "parcol": "^0.1.5"
   }
 }
